@@ -15,7 +15,7 @@ SO THAT I can organize and plan my business
 
 The following video shows an example of the application being used from the command line:
 
-[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](./Assets/12-sql-homework-video-thumbnail.png)](https://2u-20.wistia.com/medias/2lnle7xnpk)
+[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](.\assets\12-sql-homework-video-thumbnail.png)](https://2u-20.wistia.com/medias/2lnle7xnpk)
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ I used the [MySQL2 package](https://www.npmjs.com/package/mysql2) to connect to 
 
 I designed the database schema as shown in the following image:
 
-![Database schema includes tables labeled “employee,” role,” and “department.”](./Assets/12-sql-homework-demo-01.png)
+![Database schema includes tables labeled “employee,” role,” and “department.”](.\assets\12-sql-homework-demo-01.png)
 
 
 ## Technical Acceptance Criteria
