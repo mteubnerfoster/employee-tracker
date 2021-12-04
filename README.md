@@ -19,7 +19,7 @@ The following video shows an example of the application being used from the comm
 
 I designed the database schema as shown in the following image:
 
-![Database schema includes tables labeled “employee,” role,” and “department.”](.\assets\12-sql-homework-demo-01.png)
+![image](.\assets\employeetrackerdemo.JPG)
 
 
 ## Technologies Used
