@@ -19,7 +19,7 @@ Video coming soon
 
 I designed the database schema as shown in the following image:
 
-![image](.\assets\employeetrackerdemo.JPG)
+![image](https://github.com/mteubnerfoster/employee-tracker/blob/main/assets/employeetrackerdemo.JPG)
 
 ## Technologies Used
 
