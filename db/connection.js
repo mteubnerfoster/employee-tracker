@@ -1,5 +1,5 @@
 require('dotenv').config();
-// var eptCode = require('../CMS.js');
+// var eptCode = require('../index.js');
 const mysql = require('mysql');
 const { promisify } = require('util');
 
