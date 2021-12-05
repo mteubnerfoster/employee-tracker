@@ -1,16 +1,22 @@
-const mysql = require("mysql2");
+require('dotenv').config();
+// var eptCode = require('../CMS.js');
+const mysql = require('mysql');
+const { promisify } = require('util');
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  // Your username
-  user: "root",
-  // Your password
-  password: "",
-  database: "employees"
-});
+const databaseConfig = {
+  connectionLimit: 10,
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
+};
 
-connection.connect(function (err) {
-  if (err) throw err;
-});
+const pool = mysql.createPool(databaseConfig);
+const promiseQuery = promisify(pool.query).bind(pool);
+const promisePoolEnd = promisify(pool.end).bind(pool);
 
-module.exports = connection;
+module.exports = {
+  promiseQuery,
+  promisePoolEnd,
+};
