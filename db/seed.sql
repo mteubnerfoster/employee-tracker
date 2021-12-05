@@ -29,5 +29,5 @@ VALUES
     ('Kevin', 'Smith', 4, 3),
     ('Rachel', 'McAdams', 5, NULL),
     ('Steven', 'Universe', 6, 5),
-    ('Sarah', 'Silverman', 7, NULL),
+    ('Sarah', 'Lourd', 7, NULL),
     ('Nicolas', 'Cage', 8, 7);
