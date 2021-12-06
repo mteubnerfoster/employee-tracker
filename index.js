@@ -1,3 +1,4 @@
+require("dotenv").config();
 const logo = require('asciiart-logo');
 const inquirer = require('inquirer');
 require('console.table');
