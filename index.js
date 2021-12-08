@@ -8,7 +8,6 @@ const db = require('./db/methods.js');
 const prompt = require('./db/prompts.js');
 // Start-up const
 const initialChoice = () => {
-
     inquirer.prompt(prompt.mainPrompt).then(function ({ choices }) {
         switch (choices) {
           case 'View departments': return viewDepartments();
