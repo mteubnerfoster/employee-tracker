@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const util = require('util');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: 'employee_tracker_DB',
