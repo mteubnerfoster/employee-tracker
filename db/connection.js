@@ -1,6 +1,6 @@
 'use strict';
-require("dotenv").config();
 const mysql = require('mysql2');
+require("dotenv").config();
 const util = require('util');
 
 const connection = mysql.createConnection({
@@ -10,7 +10,10 @@ const connection = mysql.createConnection({
     database: 'employee_tracker_DB',
 });
 
-connection.connect();
+connection.connect(function(err) {
+    if (err) throw err;
+});
+
 connection.query = util.promisify(connection.query);
 
 module.exports = connection;

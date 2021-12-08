@@ -24,6 +24,7 @@
     "express": "^4.17.1",
     "inquirer": "^8.2.0",
     "mysql2": "^2.3.3",
-    "node.js": "^0.0.1-security"
+    "node.js": "^0.0.1-security",
+    "util": "^0.12.4"
   }
 }
