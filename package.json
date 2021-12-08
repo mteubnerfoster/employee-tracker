@@ -4,7 +4,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "name": "employee-tracker",
-  "description": "I built a command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL. This Content Management System (CMS) application allows non-developers to easily view and interact with information stored in databases.",
+  "description": "This Content Management System (CMS) application allows non-developers to easily view and interact with information stored in databases.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
