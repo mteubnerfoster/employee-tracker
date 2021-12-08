@@ -1,5 +1,4 @@
 require("dotenv").config();
-const logo = require('asciiart-logo');
 const inquirer = require('inquirer');
 require('console.table');
 const db = require('./db/methods.js');
@@ -16,7 +15,7 @@ const initialChoice = () => {
           case 'Add a role': return addRole();
           case 'Add an employee': return addEmployee();
           case 'Update employee roles': return updateEmpRoles();
-          case 'EXIT': process.exit();
+          case 'Exit': process.exit();
         }
     });
 };
