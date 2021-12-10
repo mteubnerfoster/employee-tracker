@@ -5,7 +5,8 @@ const inquirer = require('inquirer');
 require('console.table');
 const db = require('./db/methods.js');
 const prompt = require('./db/prompts.js');
-// Start-up const
+
+// Start up const
 const initialChoice = () => {
     inquirer.prompt(prompt.mainPrompt).then(function ({ choices }) {
         switch (choices) {
@@ -17,9 +18,10 @@ const initialChoice = () => {
           case 'Add an employee': return addEmployee();
           case 'Update employee roles': return updateEmpRoles();
           case 'Exit': process.exit();
-        }
+        };
     });
 };
+
 // View functions
 async function viewDepartments() {
     const viewDept = await db.viewDepartments();
@@ -41,6 +43,7 @@ async function viewEmployees() {
     console.log('======================================================');
     initialChoice();
   };
+
 // Add functions
 async function addDepartment() {
     const addDep = await inquirer.prompt(prompt.addDept);
@@ -101,5 +104,5 @@ async function updateEmpRoles() {
     viewEmployees();
     console.log('======================================================');
   };
-// Invoke start-up const
+// Start const
   initialChoice();
