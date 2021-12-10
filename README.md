@@ -14,7 +14,7 @@ SO THAT I can organize and plan my business
 ```
 
 ## Usage
-* Run node index.js to begin.
+* Run node index.js to begin
 * Choose the appropriate option from the dropdown
 * View departments, roles, and employees
 * Add departments, roles, and employees
