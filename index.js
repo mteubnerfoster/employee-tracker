@@ -22,7 +22,7 @@ const initialChoice = () => {
     });
 };
 
-// Viewing functions
+// View functions
 async function viewDepartments() {
     const viewDept = await db.viewDepartments();
     console.table(viewDept);
@@ -104,5 +104,6 @@ async function updateEmpRoles() {
     viewEmployees();
     console.log('================================');
   };
+  
 // Start const
   initialChoice();
