@@ -104,6 +104,5 @@ async function updateEmpRoles() {
     viewEmployees();
     console.log('================================');
   };
-  
 // Start const
   initialChoice();
