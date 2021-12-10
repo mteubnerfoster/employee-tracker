@@ -36,7 +36,7 @@ updateEmpRoles(newEmpRole) {
     return this.connection.query(
         `UPDATE employees SET role_id = ${newEmpRole.newRole} WHERE id = ${newEmpRole.empId}`, newEmpRole
     );
-}
+};
 
 }
 
