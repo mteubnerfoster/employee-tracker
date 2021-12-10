@@ -1,8 +1,6 @@
--- values/inputs
-USE employee_tracker_DB;
+USE employee_tracker_db;
 
 -- department seeds
-
 INSERT INTO departments (dept_name)
 VALUES ('Production');
 
@@ -14,7 +12,7 @@ VALUES ('Marketing');
 
 -- role seeds
 
--- Production
+--- Production
 INSERT INTO roles (role_title, salary, department_id)
 VALUES ('Production Lead', 140000.00, 1);
 
@@ -24,7 +22,7 @@ VALUES ('Production Agent', 85000.00, 1);
 INSERT INTO roles (role_title, salary, department_id)
 VALUES ('Receptionist', 70000.00, 1);
 
--- Research and Development
+--- Research and Development
 INSERT INTO roles (role_title, salary, department_id)
 VALUES ('QA Specialist', 125000.00, 2);
 
@@ -34,7 +32,7 @@ VALUES ('Education and Instruction', 95000.00, 2);
 INSERT INTO roles (role_title, salary, department_id)
 VALUES ('Security Researcher', 80000.00, 2);
 
--- Marketing
+--- Marketing
 INSERT INTO roles (role_title, salary, department_id)
 VALUES ('Chief Marketing Officer', 115000.00, 3);
 
@@ -46,7 +44,7 @@ VALUES ('Marketing Consultant', 79000.00, 3);
 
 -- employee seeds
 
--- Production
+--- Production
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Steven', 'Universe', 1, NULL);
 
@@ -59,7 +57,7 @@ VALUES ('Lapis', 'Lazuli', 2, 1);
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Rose', 'Quartz', 3, 1);
 
--- Research and Development
+--- Research and Development
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Sadie', 'Miller', 4, NULL);
 
@@ -69,7 +67,7 @@ VALUES ('Lars', 'Barriga', 5, 2);
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Peridot', 'Rabara', 6, 2);
 
--- Marketing
+--- Marketing
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Jasper', 'Brooks', 7, NULL);
 

@@ -6,7 +6,7 @@ require('console.table');
 const db = require('./db/methods.js');
 const prompt = require('./db/prompts.js');
 
-// Start up const
+// Initiate const
 const initialChoice = () => {
     inquirer.prompt(prompt.mainPrompt).then(function ({ choices }) {
         switch (choices) {
@@ -22,25 +22,25 @@ const initialChoice = () => {
     });
 };
 
-// View functions
+// Viewing functions
 async function viewDepartments() {
     const viewDept = await db.viewDepartments();
     console.table(viewDept);
-    console.log('======================================================');
+    console.log('================================');
     initialChoice();
   };
 
 async function viewRoles() {
     const viewRole = await db.viewRoles();
     console.table(viewRole);
-    console.log('======================================================');
+    console.log('================================');
     initialChoice();
   };
 
 async function viewEmployees() {
     const viewEmps = await db.viewEmployees();
     console.table(viewEmps);
-    console.log('======================================================');
+    console.log('================================');
     initialChoice();
   };
 
@@ -50,7 +50,7 @@ async function addDepartment() {
     const res = await db.addDepartment(addDep.departments);
     console.log(`Added ${addDep.departments} to the the database.`);
     viewDepartments();
-    console.log('======================================================');
+    console.log('================================');
 };
 
 async function addRole() {
@@ -63,7 +63,7 @@ async function addRole() {
     const roles = await inquirer.prompt(prompt.addingRole(deptOptions));
     await db.addRole(roles);
     viewRoles();
-    console.log('======================================================');
+    console.log('================================');
   };
 
   async function addEmployee() {
@@ -82,7 +82,7 @@ async function addRole() {
     const employees = await inquirer.prompt(prompt.addingEmps(roleChoices, managerIdChoices))
     await db.addEmployee(employees);
     viewEmployees();
-    console.log('======================================================');
+    console.log('================================');
   };
 
 // Update functions
@@ -102,7 +102,7 @@ async function updateEmpRoles() {
     const newEmpRole = await inquirer.prompt(prompt.updateRoles(empChoice, roleChoice));
     await db.updateEmpRoles(newEmpRole);
     viewEmployees();
-    console.log('======================================================');
+    console.log('================================');
   };
 // Start const
   initialChoice();
